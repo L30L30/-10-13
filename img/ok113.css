@@ -1,0 +1,27 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+.img-start{
+  border:5px solid coral;
+}
+.img-end{
+    border:4px solid #bb6b29;
+}
+.relative{
+
+    background: cadetblue;
+    height: 500px;
+    height: 500px;
+}
+.absolute{
+    background: blue;
+    height: 100px;
+    width: 100px;
+}
