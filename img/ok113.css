@@ -1,27 +1,41 @@
-*{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.flip-card-inner {
+    position: relative;
 }
-img{
-    height: 200px;
-    width: 200px;
-}
-.img-start{
-  border:5px solid coral;
-}
-.img-end{
-    border:4px solid #bb6b29;
-}
-.relative{
 
-    background: cadetblue;
-    height: 500px;
-    height: 500px;
+.flip-card-front,
+.flip-card-back{
+    position: absolute;
 }
-.absolute{
-    background: blue;
-    height: 100px;
-    width: 100px;
+
+.flip-card-front,
+.flip-card-back,
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
 }
+
+.flip-card {
+    width: 300px;
+    height: 300px;
+}
+
+.flip-card-front {
+    background-color: deeppink;
+    color: azure;
+}
+
+.flip-card-back {
+    background-color: chartreuse;
+    transform: rotateY(180deg);
+    color: navy;
+}
+
+.flip-card-inner:hover {
+    transform:rotateY(180deg);
+}
+
+.flip-card-inner{
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
